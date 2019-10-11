@@ -11,7 +11,8 @@ describe("Login with correct login and password", function () {
 
     afterEach(async function () {
         await PageFactory.getPage("Home").Header.clickSettingsAndOptions();
-        return await PageFactory.getPage("Options").clickLogoutButton();
+        await PageFactory.getPage("Options").clickLogoutButton();
+        return await PageFactory.getPage("Login").clickfullFormReceiptButton();
     });
 
     it('should login with correct login and password', async function () {
