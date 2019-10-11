@@ -10,7 +10,7 @@ class Header {
 
     async clickSettingsAndOptions() {
         await this.settingsAndOptionsButton.waitOfElemClickable();
-        logger.info(`Clicking [Settings And Options] button`);
+        logger.info(`Clicking "${this.settingsAndOptionsButton}"`);
         return this.settingsAndOptionsButton.click();
     };
 };

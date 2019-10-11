@@ -11,8 +11,7 @@ describe("Login with correct login and password", function () {
 
     afterEach(async function () {
         await PageFactory.getPage("Home").Header.clickSettingsAndOptions();
-        await PageFactory.getPage("Options").clickLogoutButton();
-        return await PageFactory.getPage("ShortLogin").clickFullFormButton();
+        return await PageFactory.getPage("Options").clickLogoutButton();
     });
 
     it('should login with correct login and password', async function () {
@@ -20,7 +19,6 @@ describe("Login with correct login and password", function () {
         await PageFactory.getPage("Login").typeEmail(testData.email);
         await PageFactory.getPage("Login").typePassword(testData.password);
         await PageFactory.getPage("Login").clickSubmitButton();
-
         const isIconPresent = await PageFactory.getPage("Home").isUserIconPresent();
         expect(isIconPresent).to.be.equal(true);
     });

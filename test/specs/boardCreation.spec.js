@@ -8,7 +8,7 @@ describe("Board creation in user account", function () {
         return browser.manage().window().maximize();
     });
 
-    it('should create new board', async function () {
+    xit('should create new board', async function () {
         await PageFactory.getPage("Home").open();
         await PageFactory.getPage("Home").clickUserButton();
         
