@@ -29,12 +29,12 @@ class Element {
 
     async waitOfElemPresence() {
         let EC = protractor.ExpectedConditions;
-        await browser.wait(EC.presenceOf(this.element), 7000);
+        await browser.wait(EC.presenceOf(this.element), 10000);
     };
 
     async waitOfElemClickable() {
         let EC = protractor.ExpectedConditions;
-        await browser.wait(EC.elementToBeClickable(this.element), 8000);
+        await browser.wait(EC.elementToBeClickable(this.element), 15000);
     };
 };
 

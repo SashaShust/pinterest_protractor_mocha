@@ -11,7 +11,7 @@ class LoginPage {
         this.fullFormReceiptButton = new Element("[Full form receipt] button", "//div[@data-test-id='login-switch-account']/div");
     };
 
-    open() {
+    openLogin() {
         logger.info(`Opening "${this.url}"`);
         return browser.get(this.url);
     };

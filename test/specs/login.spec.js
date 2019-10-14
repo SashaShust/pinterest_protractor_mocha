@@ -16,7 +16,7 @@ describe("Login with correct login and password", function () {
     });
 
     it('should login with correct login and password', async function () {
-        await PageFactory.getPage("Login").open();
+        await PageFactory.getPage("Login").openLogin();
         await PageFactory.getPage("Login").typeEmail(testData.email);
         await PageFactory.getPage("Login").typePassword(testData.password);
         await PageFactory.getPage("Login").clickSubmitButton();

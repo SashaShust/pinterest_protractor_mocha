@@ -1,4 +1,3 @@
-const logger = require("../../../config/logger.config");
 const Element = require("../elements/element");
 const Collection = require("../elements/collection");
 
@@ -10,7 +9,6 @@ class Header {
 
     async clickSettingsAndOptions() {
         await this.settingsAndOptionsButton.waitOfElemClickable();
-        logger.info(`Clicking "${this.settingsAndOptionsButton}"`);
         return this.settingsAndOptionsButton.click();
     };
 };
